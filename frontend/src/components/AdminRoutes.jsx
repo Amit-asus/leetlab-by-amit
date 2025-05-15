@@ -13,7 +13,7 @@ const AdminRoute = () => {
     );
   }
 
-  //if the usr is not a admin then navigate to the  home page 
+  //if the usr is not a admin then navigate to the  home page
   if (!authUser || authUser.role !== "ADMIN") {
     return <Navigate to="/" />;
   }
